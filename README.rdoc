@@ -15,12 +15,12 @@ This is a basic site template that I use to kick off a lot of my projects. Uses 
 
 == Dependencies
 
-  <a href='http://www.ruby-lang.org/en/downloads'>Ruby 1.9.3</a>
-  Sinatra[http://www.sinatrarb.com]
-  Haml[http://haml.info]
-  Heroku[http://www.heroku.com]
-  Twitter Bootstrap[http://twitter.github.com/bootstrap]
-  Google Analytics[http://www.google.com/analytics]
+  {Ruby 1.9.3}[http://www.ruby-lang.org/en/downloads]
+  {Sinatra}[http://www.sinatrarb.com]
+  {Haml}[http://haml.info]
+  {Heroku}[http://www.heroku.com]
+  {Twitter Bootstrap}[http://twitter.github.com/bootstrap]
+  {Google Analytics}[http://www.google.com/analytics]
 
 
 == Errors / Bugs
