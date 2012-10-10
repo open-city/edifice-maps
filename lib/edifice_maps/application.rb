@@ -3,7 +3,7 @@ require "sinatra/reloader"
 require "sinatra-initializers"
 require "sinatra/r18n"
 
-module SiteTemplate
+module EdificeMaps
   class Application < Sinatra::Base
     enable :logging, :sessions
     enable :dump_errors, :show_exceptions if development?
@@ -22,12 +22,13 @@ module SiteTemplate
     use Rack::Logger
     use Rack::Session::Cookie
 
-    helpers SiteTemplate::HtmlHelpers
+    helpers EdificeMaps::HtmlHelpers
     
     get "/" do
-      haml :index
+      File.read(File.join('public', 'index.html'))
     end
     
+    # This magic route saves you the trouble of writing routes for everything
     get "/:page" do
       @current_menu = params[:page]
       haml params[:page].to_sym
