@@ -25,7 +25,7 @@ module EdificeMaps
     helpers EdificeMaps::HtmlHelpers
     
     get "/" do
-      File.read(File.join('public', 'index.html'))
+        haml :index
     end
     
     # This magic route saves you the trouble of writing routes for everything

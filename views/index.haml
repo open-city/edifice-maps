@@ -1,0 +1,93 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no", :name => "viewport"}/
+    %meta{:content => "black", :name => "apple-mobile-web-app-status-bar-style"}/
+    %meta{:content => "yes", :name => "apple-mobile-web-app-capable"}/
+    %title Edifice Maps
+    %link{:href => "site.css", :rel => "stylesheet"}
+      %script{:src => "javascripts/modestmaps.min.js"}
+      %script{:src => "javascripts/wax.mm.min.js"}
+      %script{:src => "javascripts/jquery-1.7.2.min.js"}
+      %script{:src => "javascripts/underscore-min.js"}
+      %script{:src => "javascripts/site.js"}
+  %body
+    #header.gradient
+      .inner
+        %h1#title Edifice
+        %span.green-data
+          by
+          %a{:href => "http://www.opencityapps.org/"} Open City
+        %h6.description
+          Maps of Chicago's built environment, from the Edifice database
+        %a.reinventgreen{:href => "http://hackerleague.org/hackathons/reinvent-green"} #reinventchi
+    #sidebar
+      .inner
+        #layer-switcher
+          %ul
+            %li#buildings-footprints
+              %a.title{"data-layer" => "jpvelez.buildings", :href => "#"} Buildings
+              .description
+                %span.arrow  
+                %a{:href => "https://data.cityofchicago.org/Buildings/Building-Footprints/w2v3-isjw"} Every building
+                in Chicago, colored by its footprint area.
+            %li#street-trees
+              %a.title{"data-layer" => "lxbarth.map-e1zsyom9,jpvelez.new_demo_permits", :href => "#"} Demolitions
+              .description
+                %span.arrow>  
+                All
+                %a{:href => "https://data.cityofchicago.org/Buildings/Demolition-Permits-2012/zkgv-8cwu"} buildings demolished
+                since 2006.
+            %li#parks
+              %a.title{"data-layer" => "jpvelez.new_const_permits", :href => "#"} Violations
+              .description
+                %span.arrow>  
+                Every
+                %a{:href => "https://data.cityofchicago.org/Buildings/Building-Violations/22u3-xenr"} building violation
+                issued by the City of Chicago since 2006.
+            %li#cool-roofs
+              %a.title{"data-layer" => "lxbarth.map-wpqmws96,jpvelez.construction-spending", :href => "#"} Construction
+              .description
+                %span.arrow>  
+                Total construction spending by census block group.
+            /
+              <li id='energy'>
+              <a class='title' data-layer='lxbarth.map-v9o1vc83' href='#'>Land Use</a>
+              <div class='description'><span class='arrow'>&nbsp;</span>What's going on inside every building, according to the <a href="http://www.cmap.illinois.gov/land-use-inventory">Chicago Metropolitain Agency for Planning</a>.</div>
+              </li>
+        .notes
+          All data from
+          %a{:href => "https://data.cityofchicago.org/"} Chicago's Open Data portal
+          and
+          = succeed "." do
+            %a{:href => "http://openstreetmap.org"} OpenStreetMap
+          Maps designed with
+          = succeed "," do
+            %a{:href => "http://mapbox.com/tilemill/"} TileMill
+          site template by
+          = succeed "." do
+            %a{:href => "http://mapbox.com/reinventgreen/"} MapBox
+          Code is on
+          = succeed "." do
+            %a{:href => "https://github.com/jpvelez/reinventchi"} GitHub
+    #map.fullscreen
+      #share
+        %a.share.button{:href => "#"} Share
+    .modal.share
+      .modal-box
+        %a.close.button{:href => "#"} ×
+        %h2 Share
+        .tilejson
+          %textarea
+          %h3 TileJSON URL
+          Use with a TileJSON
+          %a{:href => "http://mapbox.com/wax/"} Wax
+          connector or the
+          = succeed "." do
+            %a{:href => "http://mapbox.com/mobile/"} MapBox iOS SDK
+        .embed
+          %textarea
+          %h3 Embed code
+          Copy and paste this HTML into your website or blog to show this map.
+    #attribution

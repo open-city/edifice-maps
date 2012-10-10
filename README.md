@@ -3,10 +3,10 @@ Edifice Maps
 
 Simple website showcasing maps of Chicago's built environment, made with building data from Edifice db.
 
-We designed the maps using [TileMill](http://mapbox.com/tilemill/) for the Reinventing Chicago Hackathon,
-October 6-8 2012 in Chicago.
+We designed the maps using [TileMill](http://mapbox.com/tilemill/) for the 
+[Reinventing Chicago Hackathon](http://www.cnt.org/events/reinventing-chicago/), October 6-8 2012 in Chicago.
 
-We borrowed the [site template](http://mapbox.com/reinventgreen/) and map styles from the wonderful folks at [Mapbox.](http://mapbox.com/).
+We borrowed the [site template](http://mapbox.com/reinventgreen/) and map styles from the wonderful folks at [Mapbox](http://mapbox.com/).
 
 Our tilemill projects are in `maps/`: 
 
