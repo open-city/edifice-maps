@@ -21,13 +21,13 @@
           %a{:href => "http://www.opencityapps.org/"} Open City
         %h6.description
           Maps of Chicago's built environment, from the Edifice database
-        %a.reinventgreen{:href => "http://hackerleague.org/hackathons/reinvent-green"} #reinventchi
+        %a.reinventgreen{:href => "http://www.cnt.org/events/reinventing-chicago/hackathon"} #reinventchi
     #sidebar
       .inner
         #layer-switcher
           %ul
             %li#buildings-footprints
-              %a.title{"data-layer" => "jpvelez.buildings", :href => "#"} Buildings
+              %a.title{"data-layer" => "jpvelez.building_areas", :href => "#"} Buildings
               .description
                 %span.arrow  
                 %a{:href => "https://data.cityofchicago.org/Buildings/Building-Footprints/w2v3-isjw"} Every building
@@ -40,7 +40,7 @@
                 %a{:href => "https://data.cityofchicago.org/Buildings/Demolition-Permits-2012/zkgv-8cwu"} buildings demolished
                 since 2006.
             %li#parks
-              %a.title{"data-layer" => "jpvelez.new_const_permits", :href => "#"} Violations
+              %a.title{"data-layer" => "jpvelez.new_violations", :href => "#"} Violations
               .description
                 %span.arrow>  
                 Every

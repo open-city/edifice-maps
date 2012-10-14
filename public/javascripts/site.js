@@ -12,7 +12,7 @@ $(function() {
         // Tile layer, position on New York City
         var map = new MM.Map('map',
         new wax.mm.connector(tilejson));
-        map.setCenterZoom(new MM.Location(41.8682,-87.7506),
+        map.setCenterZoom(new MM.Location(41.8682,-87.7006),
             12);
         wax.mm.zoomer(map).appendTo(map.parent);
 
@@ -27,7 +27,6 @@ $(function() {
 
         // Update UI from map info
         var updateUI = function(tilejson) {
-            $('#attribution').empty().append(tilejson.attribution);
             $('#layer-switcher li').removeClass('active');
             $('#layer-switcher li#' + tilejson.handle).addClass('active');
         };
@@ -48,7 +47,7 @@ $(function() {
                 .tilejson(tilejson)
                 .on(wax.tooltip().animate(true).parent(map.parent).events());
             if (legend) {
-                $(legend.element()).css('opacity', 0);
+                $(legend.element()).css('opacity', 0.8);
                 legend.content(tilejson);
                 $(legend.element()).animate({opacity: 1}, 500);
             }
@@ -58,7 +57,7 @@ $(function() {
 
     // Set up map and layerswitcher.
     // Iterate through layer-switcher list, building urls using layer anchor's data-layer attr, fetching tilejson
-    // object using url, and adding each tilejson to a layers hash, keyed by the layer div's id.
+    // objects using those urls, and adding each tilejson to a layers hash, keyed by the layer div's id.
     $('#layer-switcher li').each(function(i, el) {
         wax.tilejson(tileUrl($('a', el).attr('data-layer')), function(tilejson) {
             tilejson.handle = $(el).attr('id');

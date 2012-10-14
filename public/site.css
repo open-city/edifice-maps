@@ -241,8 +241,8 @@ h6.description {
 
 #share {
   background: #303030;
-  top: 130px;
-  right: 20px;
+  top: 119px;
+  right: 1140px;
   position: absolute;
   z-index: 100;
   width: 60px;
@@ -335,17 +335,17 @@ a.zoomer {
   text-align: center;
   width: 30px;
   height: 30px;
-  top: 100px;
+  top: 89px;
   color: #fff;
   z-index: 200;
   }
   a.zoomin {
-    right: 50px;
+    right: 1170px;
     -moz-border-radius: 2px 0 0 2px;
     border-radius: 2px 0 0 2px;
     }
   a.zoomout {
-    right: 20px;
+    right: 1140px;
     border-left: 1px solid #000;
     -moz-border-radius: 0 2px 2px 0;
     border-radius: 0 2px 2px 0;
