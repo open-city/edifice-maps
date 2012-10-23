@@ -20,9 +20,66 @@
         %a.reinventgreen{:href => "/"} Back to maps
     #about
       %h1
-        What is this site?
+        What is this?
       %p
-        Maps of Chicago's built environment.
+        Edifice is a series of maps that explore Chicago's built environment.<br><br> 
+        Each map reveals a different facet of this great American city - building footprints, demolitions, violations, and new construction.
+      %h1
+        Who made it, and why?
+      %p
+        We built the maps to showcase the Edifice built environment database (see below.)<br><br>
+        Built by
+        %a{ :href => 'https://twitter.com/CoryMollet' }
+          Cory Mollet 
+        and 
+        %a{ :href => 'https://twitter.com/jpvelez' }
+          Juan-Pablo Velez 
+        from 
+        %a{ :href => 'http://opencityapps.org' }
+          Open City
+        during the Center for Neighborhood Technology's 
+        %a{ :href => 'http://www.cnt.org/events/reinventing-chicago/hackathon' }
+          Reinventing Chicago hackathon. 
+        <br><br>
+        Cory wrestled the building data into shape. Juan designed the maps - with lots of help from Mapbox's 
+        %a{ :href => 'https://twitter.com/lxbarth' }
+          Alex Barth 
+        and
+        %a{ :href => 'https://twitter.com/ian_villeda' }
+          Ian Villeda.
+      %h1
+        What is the Edifice database?
+      %p
+        The City of Chicago and Cook County possess dozens of datasets that touch on Chicago's buildings - from building inspections,
+        to zoning, to property values.<br><br>
+        Cory tied these disparate datasets together, and we now have rich data on every one of Chicago's 800,000 buildings. We call this the <strong>Edifice database</strong>.<br><br>
+        In short, we're assembling the world's <strong>first real-time model of an entire city</strong>. And we plan to publish it as an open data platform that urban scientists, policymakers, and entrepreneurs can build on.<br><br>
+        Interested?
+        %a{ :href => 'mailto:info@opencityapps.org' }
+          Get in touch.
+      %h1
+        What tech did you use?
+      %p 
+        We borrowed the website skeleton and map styles from the awesome folks at Mapbox. The original website is
+        %a{ :href => 'http://mapbox.com/reinventgreen/' }
+          here
+        , the code is
+        %a{ :href => 'https://github.com/mapbox/reinventgreen' }
+          here.<br><br>
+        You can view the code for this site 
+        %a{ :href => 'https://github.com/open-city/edifice-maps' }
+          here
+        , and for the TileMill projects we used to make the maps 
+        %a{ :href => 'https://github.com/open-city/edifice-maps-tilemill' }
+          here.<br><br>
+        Here's a laundy list of technologies we used:<br><br>
+        \- HTML/CSS<br>
+        \- Javascript<br>
+        \- <a href='http://mapbox.com/wax/'>Wax</a><br>
+        \- <a href='http://modestmaps.com/'>Modest Maps</a><br>
+        \- <a href='http://mapbox.com/tilemill/'>TileMill</a><br>
+        \- <a href='http://mapbox.com/'>Mapbox map hosting</a><br>
+        \- <a href='http://www.postgresql.org/'>PostgreSQL</a> + <a href='http://postgis.refractions.net/'>PostGIS</a><br>
 
     %script{:src => "javascripts/jquery-1.7.2.min.js"}
     %script{:src => "javascripts/site.js"}

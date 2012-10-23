@@ -8,7 +8,7 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+small, strike, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -43,7 +43,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 --------------------------------------------------------- */
 body {
   background: #111;
-  font: 15px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font: normal 15px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
   color: #7a7a7a;
    -webkit-font-smoothing: antialiased;
   }
@@ -85,7 +85,7 @@ a {
   z-index: 0;
   }
 #about p {
-    padding: 20px 0 0 20px;
+    padding: 20px 0 50px 20px;
 }
 #header {
   position: absolute;
