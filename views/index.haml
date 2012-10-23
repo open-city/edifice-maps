@@ -15,13 +15,14 @@
   %body
     #header.gradient
       .inner
-        %h1#title Edifice
+        %a#title{ :href => '/' } 
+          Edifice
         %span.green-data
           by Cory &amp; Juan at
           %a{:href => "http://www.opencityapps.org/"} Open City
         %h6.description
           Maps of Chicago's built environment, from the Edifice database
-        %a.reinventgreen{:href => "http://www.cnt.org/events/reinventing-chicago/hackathon"} #reinventchi
+        / %a.reinventgreen{:href => "/about"} About
     #sidebar
       .inner
         #layer-switcher

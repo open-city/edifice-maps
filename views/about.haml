@@ -1,0 +1,28 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no", :name => "viewport"}/
+    %meta{:content => "black", :name => "apple-mobile-web-app-status-bar-style"}/
+    %meta{:content => "yes", :name => "apple-mobile-web-app-capable"}/
+    %title Edifice Maps
+    %link{:href => "site.css", :rel => "stylesheet"}
+      %script{:src => "javascripts/site.js"}
+  %body
+    #header.gradient
+      .inner
+        %a#title{ :href => '/' }
+          Edifice
+        %span.green-data
+          by Cory &amp; Juan at
+          %a{:href => "http://www.opencityapps.org/"} Open City
+        %h6.description
+          Maps of Chicago's built environment, from the Edifice database
+        %a.reinventgreen{:href => "/"} Back to maps
+    #about
+      %h1
+        What is this site?
+      %p
+        Maps of Chicago's built environment.
+
+ 
