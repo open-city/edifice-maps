@@ -69,6 +69,7 @@ $(function() {
                 // called below, and when other layer controls are clicked.
                 var updateMap = buildMap(tilejson);
                 $('#layer-switcher li .title').click(function() {;
+                    _trackClickEventWithGA("Homepage", "Switch map", $(this).html());
                     updateMap(layers[$(this).parent().attr('id')]); // Pass tilejson of clicked control to updateMap
                     return false;
                 });
