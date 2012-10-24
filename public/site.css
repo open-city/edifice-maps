@@ -57,6 +57,7 @@ h1 {
   }
 p {
   padding: 0 0 10px 0;
+  color: #999;
   }
 a {
   color: #6BAD5E;
@@ -96,10 +97,10 @@ a {
   -moz-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   z-index: 5000;
-  }
+}
   #header .inner {
     padding: 0 10px;
-    }
+}
 #sidebar {
   background: #303030;
   position: absolute;
@@ -108,16 +109,16 @@ a {
   top: 0;
   left: 0;
   z-index: 100;
-  }
-  #sidebar .inner {
-    padding-top: 120px;
-    }
+}
+#sidebar .inner {
+  padding-top: 120px;
+}
 #attribution {
   position: absolute;
   right: 20px;
   bottom: 10px;
   font-size: 10px;
-  }
+}
 
 #layer-switcher li.active,
 .gradient {
